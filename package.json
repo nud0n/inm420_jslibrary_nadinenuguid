@@ -1,0 +1,15 @@
+{
+  "name": "inm420_jslibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Nadine Nuguid",
+  "license": "private",
+  "private": true,
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Library Travel</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header + Navigatiation -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">Skypiea</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="btn-book">Book Now</a>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- GSAP text scramble -->
+            <h1 class="hero-title">Travel with <span></span></h1>
+            <h2 class="hero-subtitle">Discover amazing places with a great experience</h2>
+            <a href="#" class="btn-start">Get Started</a>
+        </section>
+    </header>
+    <!-- What we Offer + Cards -->
+     <section class="services_offer">
+        <article class="offer-card" data-aos="fade-right" data-aos-delay="300">
+            <img class="offer-icon" src="./assets/images/airplane.png" alt="Airplane">
+            <div class="offer-text">
+                <h3>Travel & Tours</h3>
+                <p>Explore unique destinations with personalized travel packages and expert guides. Unleash the adventure of a lifetime!</p>
+            </div>
+        </article>
+        <article class="offer-card" data-aos="fade-down" data-aos-delay="600">
+            <img class="offer-icon" src="./assets/images/bed.png" alt="Hotel Bed">
+            <div class="offer-text">
+                <h3>Hotel Reservations</h3>
+                <p>Find the perfect stay with our handpicked hotels and exclusive booking deals. Comfort and convenience, just a click away.</p>
+            </div>
+        </article>
+        <article class="offer-card" data-aos="fade-left" data-aos-delay="900">
+            <img class="offer-icon" src="./assets/images/car rental.png" alt="Car Rental">
+            <div class="offer-text">
+                <h3>Car Rentals</h3>
+                <p>Rent a car with ease, choose from a wide selection, and enjoy flexible pickup options. Your journey begins here!</p>
+            </div>
+        </article>
+     </section>
+    <!-- Top Destinations -->
+    <section class="top-dest" data-aos="fade-up" data-aos-delay="200">
+        <h2>Top Destinations in 2025</h2>
+        <!-- glider.js Carousel -->
+        <div class="glider-contain">
+            <div class="glider">
+                <!-- Carousel Cards -->
+                <div class="g-card">
+                    <img src="assets/images/destination 1.png" alt="Bangkok">
+                    <figure class="g-text">
+                        <h3>Bangkok, Thailand</h3>
+                        <p>63 Activities 9 Tours</p>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/destination 2.png" alt="Tokyo">
+                    <figure class="g-text">
+                        <h3>Tokyo, Japan</h3>
+                        <p>87 Activities 17 Tours</p>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/destination 3.jpeg" alt="Rome">
+                    <figure class="g-text">
+                        <h3>Rome, Italy</h3>
+                        <p>61 Activities 9 Tours</p>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/destination 4.png" alt="Paris">
+                    <figure class="g-text">
+                        <h3>Paris, France</h3>
+                        <p>61 Activities 9 Tours</p>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/destination 5.jpeg" alt="Athens">
+                    <figure class="g-text">
+                        <h3>Athens, Greece</h3>
+                        <p>27 Activities 8 Tours</p>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/destination 6.jpeg" alt="Palawan">
+                    <figure class="g-text">
+                        <h3>Palawan, Philippines</h3>
+                        <p>55 Activities 12 Tours</p>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/destination 7.jpg" alt="Halong Bay">
+                    <figure class="g-text">
+                        <h3>Halong Bay, Vietnam</h3>
+                        <p>11 Activities 3 Tours</p>
+                    </figure>
+                </div>
+            </div>
+            <!-- Navigation buttons (inside the wrapper) -->
+            <button class="glider-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="glider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>  
+    <!-- Discover your new favourite stay -->
+    <section class="fav-stay" data-aos="fade-up" data-aos-delay="200">
+        <h2>Discover Your New Favourite Stay</h2>
+        <!-- glider.js Carousel -->
+        <div class="glider-contain">
+            <div class="glider glider-2">
+                <!-- Carousel Cards -->
+                <div class="g-card">
+                    <img src="assets/images/stay1.jpg" alt="Resort">
+                    <figure class="g-text">
+                        <h3>Resort</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay2.jpg" alt="Capsule Hotel">
+                    <figure class="g-text">
+                        <h3>Capsule Hotel</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay3.jpg" alt="All Inclusive">
+                    <figure class="g-text">
+                        <h3>All Inclusive</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay4.jpg" alt="Spa">
+                    <figure class="g-text">
+                        <h3>Spa</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay5.jpg" alt="Ocean View">
+                    <figure class="g-text">
+                        <h3>Ocean View</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay6.jpg" alt="Family Friendly">
+                    <figure class="g-text">
+                        <h3>Family Friendly</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay7.jpeg" alt="Farm Stay">
+                    <figure class="g-text">
+                        <h3>Farm Stay</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay8.jpg" alt="Apart Hotel">
+                    <figure class="g-text">
+                        <h3>Apart Hotel</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay9.jpg" alt="Hot Tub">
+                    <figure class="g-text">
+                        <h3>Hot Tub</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay10.jpg" alt="Apartment">
+                    <figure class="g-text">
+                        <h3>Apartment</h3>
+                    </figure>
+                </div>
+                <div class="g-card">
+                    <img src="assets/images/stay11.jpg" alt="Pet-Friendly">
+                    <figure class="g-text">
+                        <h3>Pet-Friendly</h3>
+                    </figure>
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+            <button class="glider-prev glider-2-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="glider-next glider-2-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <!-- Plan your trip today! -->
+    <section class="flight-today" data-aos="fade-up" data-aos-delay="400">
+        <form class="booking-form">
+            <h2>Plan your trip today!</h2>
+            <!-- Departure City -->
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" placeholder="Departure City" required>
+            <!-- Arrival City -->
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" placeholder="Arrival City" required>
+            <!-- JS Cleaver: Departure Date -->
+            <label for="departure-date">Departure Date:</label>
+            <input type="text" id="departure-date" name="departure-date" placeholder="Enter date manually" required>
+             <!-- JS Cleaver: Return Date -->
+            <label for="return-date">Return Date:</label>
+            <input type="text" id="return-date" name="return-date" placeholder="Enter date manually">
+            <!-- How many passengers? -->
+            <label for="passengers">Passengers:</label>
+            <select id="passengers" name="passengers" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5+</option>
+            </select>
+            <!-- Submit Form Button -->
+            <button type="submit">Search Flights</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ventura. All Rights Reserved.</p>
+    </footer>
+    <!-- JS Libraries -->
+    <!-- glider.js -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <!-- AOS, Animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- GSAP: Text -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <!-- Cleaver.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <!-- Main JS  -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
