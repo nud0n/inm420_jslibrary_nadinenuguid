@@ -1,3 +1,4 @@
+// JS Library 1: glider.js
 window.addEventListener("load", function () {
     // First Glider (Top Destinations)
     new Glider(document.querySelector('.glider'), {
