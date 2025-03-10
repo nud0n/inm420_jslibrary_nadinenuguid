@@ -91,7 +91,6 @@ tl.to("h1 span", {duration: 2.5, text:"Possibilities"});
 tl.to("h1 span", {duration: 2, text:""});
 
 // JS Library 4: Cleaver.js
-
 document.addEventListener("DOMContentLoaded", function () {
     new Cleave("#departure-date", {
         date: true,
